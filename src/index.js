@@ -7,6 +7,7 @@ const runIOS = require('./run/iOS')
 const fs = require('fs')
 const runServer = require('./run/Server')
 const runWeb = require('./run/web')
+const buildProject = require('./build')
 
 /**
  * Get current version
@@ -79,7 +80,19 @@ function add (platform = '', options = {}) {
   options.platform = platform
   return addPlatform(options)
 }
+/**
+ * build hera app generate zip file
+ * @param options
+ */
+function build (options = {}) {
+  return buildProject(options)
+}
 
+/**
+ * publish hera app to om server
+ * @param options
+ */
+function publish (options = {}) {}
 module.exports = {
   getVersion,
   init,
@@ -87,5 +100,7 @@ module.exports = {
   add,
   runAndroid,
   runIOS,
-  runWeb
+  runWeb,
+  build,
+  publish
 }

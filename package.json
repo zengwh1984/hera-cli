@@ -1,33 +1,33 @@
 {
-  "name": "hera-cli",
-  "version": "1.3.1",
-  "description": "Hera Project Creator",
-  "main": "bin/herapack",
+  "name": "jangod-iweb-cli",
+  "version": "1.3.8",
+  "description": "Jangod IWeb Project Creator",
+  "main": "bin/client",
   "scripts": {
     "test": "npm test",
-    "format": "prettier-standard '{src/**/*.js,bin/herapack}'",
+    "format": "prettier-standard '{src/**/*.js,bin/client}'",
     "precommit": "lint-staged"
   },
   "repository": {
-    "url": "https://github.com/weidian-inc/hera-cli.git",
+    "url": "https://github.com/zengwh1984/jangod-iweb-cli.git",
     "type": "git"
   },
   "bin": {
-    "hera-cli": "bin/herapack",
-    "hera": "bin/herapack"
+    "jangod-iweb-cli": "bin/client",
+    "iweb": "bin/client"
   },
   "lint-staged": {
-    "{src/**/*.js,bin/herapack,*.json}": ["prettier-standard", "git add"]
+    "{src/**/*.js,bin/client,*.json}": ["prettier-standard", "git add"]
   },
-  "keywords": ["wxapp", "hera"],
-  "author": "Junjie Ding",
+  "keywords": ["wxapp", "jangod-iweb"],
+  "author": "zengwh ",
   "license": "MIT",
   "dependencies": {
     "boxen": "^1.3.0",
     "chalk": "^2.3.0",
     "commander": "^2.12.2",
     "fs-extra": "^5.0.0",
-    "hera-weweb": "^1.1.2",
+    "jangod-weweb": "^1.1.10",
     "inquirer": "^4.0.1",
     "pify": "^3.0.0",
     "semver-compare": "^1.0.0",
